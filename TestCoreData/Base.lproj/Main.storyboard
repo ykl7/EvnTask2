@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sOM-XB-AEB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgG-CW-dIw">
+                                <rect key="frame" x="109" y="281" width="103" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Count">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayCount" destination="BYZ-38-t0r" eventType="touchUpInside" id="isU-py-KGL"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ugJ-vb-Gsx">
+                                <rect key="frame" x="142" y="188" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9z-ni-TXi">
+                                <rect key="frame" x="77" y="363" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qon-SO-Y2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Di-Ev-acS">
+                                <rect key="frame" x="77" y="104" width="166" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="2Ru-al-JEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Generate and Save">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateAndSave" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3E-oh-W7J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZgG-CW-dIw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="93" id="3Kd-yB-BDq"/>
+                            <constraint firstItem="Q9z-ni-TXi" firstAttribute="centerX" secondItem="ZgG-CW-dIw" secondAttribute="centerX" id="8xW-V4-rZq"/>
+                            <constraint firstItem="1Di-Ev-acS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="aKN-JM-18J"/>
+                            <constraint firstItem="ugJ-vb-Gsx" firstAttribute="centerX" secondItem="1Di-Ev-acS" secondAttribute="centerX" id="gfF-YW-rdx"/>
+                            <constraint firstItem="ugJ-vb-Gsx" firstAttribute="top" secondItem="1Di-Ev-acS" secondAttribute="bottom" constant="37" id="lRJ-wO-pnu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q9z-ni-TXi" secondAttribute="bottom" constant="175" id="lVb-Kl-2gz"/>
+                            <constraint firstItem="Q9z-ni-TXi" firstAttribute="trailing" secondItem="1Di-Ev-acS" secondAttribute="trailing" id="rRj-HL-2Zw"/>
+                            <constraint firstItem="1Di-Ev-acS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="vDf-kc-7AQ"/>
+                            <constraint firstItem="Q9z-ni-TXi" firstAttribute="top" secondItem="ZgG-CW-dIw" secondAttribute="bottom" constant="35" id="wy8-rz-tR4"/>
+                            <constraint firstItem="1Di-Ev-acS" firstAttribute="leading" secondItem="Q9z-ni-TXi" secondAttribute="leading" id="xK0-eh-zX3"/>
+                            <constraint firstItem="ZgG-CW-dIw" firstAttribute="top" secondItem="ugJ-vb-Gsx" secondAttribute="bottom" constant="56" id="y7W-zP-cpU"/>
+                            <constraint firstItem="1Di-Ev-acS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdZ-xi-NsT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="81f-mN-dS7"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countLabel" destination="Q9z-ni-TXi" id="jru-Se-GlJ"/>
+                        <outlet property="loader" destination="ugJ-vb-Gsx" id="fs4-hc-oNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="966"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vCM-9f-nW5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sOM-XB-AEB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7CJ-jw-nKe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UFf-7Y-lXk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Is4-vi-0UV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="966"/>
+        </scene>
+    </scenes>
+</document>
