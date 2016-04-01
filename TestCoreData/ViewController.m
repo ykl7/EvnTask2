@@ -31,6 +31,8 @@
     context = apd.managedObjectContext;
     request = [NSFetchRequest fetchRequestWithEntityName:@"NumberToStore"];
     
+    isCounting = false;
+    
     [self displayCount];
 }
 
